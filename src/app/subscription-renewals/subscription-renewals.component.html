@@ -1,0 +1,36 @@
+<div>
+  <div class="row justify-content-center">
+    <div class="page-title">
+      Renueva su paquete ProTool
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="page-subtitle">
+      Elija un paquete y Pague mes a mes
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <input class="form-control inspectletIgnore col-4 input-padded grey-text padding-bottom" type="email" placeholder="Correo electronico">
+  </div>
+
+  <div class="row justify-content-center">
+      <select class="form-control col-4 input-padded grey-text" name="packageDropDown" id="packageDropDown">
+        <option value="" disabled="" selected="">Elige tu paquete</option>
+        <option *ngFor="let vivaPackage of shownPackages" value="{{vivaPackage.SubscriptionPackageID}}">
+          {{vivaPackage.PackageName}}
+        </option>
+      </select>
+  </div>
+
+
+
+
+
+  <button type="button" class="float-right" (click)="handleClick()">
+    Proceda al pago
+  </button>
+
+
+
+</div>

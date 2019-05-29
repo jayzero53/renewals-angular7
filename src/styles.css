@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.border-red{
+  border: 2px solid red
+}
+
+.border-yellow{
+  border: 2px solid yellow;
+}
+
+.border-blue{
+  border: 2px solid blue
+}
+
+.alignedToCenter{
+  justify-content:center;
+}
