@@ -23,14 +23,27 @@
       </select>
   </div>
 
+  <div class="dragger-container row">
 
+    <app-viva-package-card class="col"
+      *ngFor="let vivaCard of vivaCards"
+        [SubscriptionPackageID]="vivaCard.SubscriptionPackageID"
+        [AccountStatus]="vivaCard.AccountStatus"
+        [EnableCallTracking]="vivaCard.EnableCallTracking"
+        [NumBumpUps]="vivaCard.NumBumpUps"
+        [NumGallery]="vivaCard.NumGallery"
+        [NumPhotos]="vivaCard.NumPhotos"
+        [NumTopAds]="vivaCard.NumTopAds"
+        [NumUrgent]="vivaCard.NumUrgent"
+        [PackageName]="vivaCard.PackageName"
+        [Price]="vivaCard.Price"
+    ></app-viva-package-card>
 
+  </div>
 
 
   <button type="button" class="float-right" (click)="handleClick()">
     Proceda al pago
   </button>
-
-
 
 </div>

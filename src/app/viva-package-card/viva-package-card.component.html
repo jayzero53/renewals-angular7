@@ -1,0 +1,24 @@
+<div class="renewal-card selected">
+  <div class="package-overview">
+    <div class="title invisible">gran valor</div>
+    <div class="package-plan ">{{PackageName}}</div>
+    <div class="package-price ">
+      <div>
+        <span class="text-l">$</span><span class="text-xl">{{Price}}</span>
+      </div>
+      <div>
+        <span class="light-grey"> al año más IVA</span>
+      </div>
+    </div>
+  </div>
+  <hr class="divider invisible" size="1">
+  <div class="features ">
+    <h3 class="features-title ">Incluye</h3>
+    <hr class="features-divider" size="1">
+    <p><span class="tick "><strong>✓</strong></span>{{NumTopAds}} Primer Resultados</p>
+    <p *ngIf="NumGallery"><span class="tick "><strong>✓</strong></span>{{NumGallery}} Galería Por Categoría</p>
+    <p *ngIf="NumPhotos"><span class="tick "><strong>✓</strong></span>{{NumPhotos}} Sesiones De Fotos</p>
+    <p *ngIf="NumUrgent"><span class="tick "><strong>✓</strong></span>{{NumUrgent}} Urgentes</p>
+    <p *ngIf="EnableCallTracking"><span class="tick "><strong>✓</strong></span>Seguimiento de llamadas</p></div>
+  <button type="button" class="btn btn-outline-primary btn-lg choose-btn ">Elige el plan</button>
+</div>

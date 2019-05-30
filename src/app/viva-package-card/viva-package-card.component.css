@@ -1,0 +1,14 @@
+.renewal-card {
+  margin: 10px auto 1em;
+  border-radius: .5em;
+  padding-top: 1.5em;
+  height: 620px;
+  width: 290px;
+  color: #4d4d4d;
+}
+
+.renewal-card.selected {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #0b95d6;
+  box-shadow: 0 0 5px #0b95d6;
+}
